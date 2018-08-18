@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <div th:replace="/fragments/header :: header-css"/>
+</head>
+<body>
+
+<div th:replace="/fragments/header :: header"/>
+<div class="container">
+    <h1 th:text="${test} + '\'s Blog'">Username Blog</h1>
+    Example text
+</div>
+
+<div th:replace="/fragments/footer :: footer"/>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:fragment="header-css">
+
+        <title>Technical Blog of Fedor Chmilev</title>
+
+        <link th:href="@{/webjars/bootstrap/4.1.0/css/bootstrap.min.css}"
+              rel="stylesheet" media="screen"/>
+
+        <script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+
+        <link rel="stylesheet" th:href="@{/css/main.css}"/>
+
+    </div>
+</head>
+<body>
+<div th:fragment="header">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{/}">Technical Blog of Fedor Chmilev</a>
+        </div>
+    </nav>
+</div>
+
+</body>
+</html>

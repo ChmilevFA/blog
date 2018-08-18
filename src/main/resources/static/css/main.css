@@ -1,0 +1,12 @@
+a {
+    transition: all .2s;
+}
+
+.navbar-dark .navbar-brand {
+    color: #9d9d9d;
+}
+
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+     color: #fff;
+     background-color: transparent;
+ }
