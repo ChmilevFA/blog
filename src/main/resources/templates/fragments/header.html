@@ -14,10 +14,12 @@
     </div>
 </head>
 <body>
+
 <div th:fragment="header">
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" th:href="@{/}">Technical Blog of Fedor Chmilev</a>
+            <a class="btn btn-dark" th:href="@{/newArticle}">New Article</a>
         </div>
     </nav>
 </div>
