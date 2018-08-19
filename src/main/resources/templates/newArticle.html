@@ -11,7 +11,7 @@
 <div class="container">
     <!--New Article Form-->
     <form autocomplete="off" action="#" th:action="@{/newArticle}"
-          th:object="${article}" method="post" class="form-horizontal"
+          th:object="${article}" method="post" class="mt-5"
           role="form">
 
         <h2 class="text-center">Write new article</h2>
@@ -20,14 +20,14 @@
             <label th:if="${#fields.hasErrors('title')}" th:errors="*{title}"
                    class="alert alert-danger"></label>
             <input type="text" th:field="*{title}" placeholder="Title"
-                   class="form-control input-lg"/>
+                   class="form-control"/>
         </div>
 
         <div class="form-group">
             <label th:if="${#fields.hasErrors('body')}" th:errors="*{body}"
                    class="alert alert-danger"></label>
-            <textarea th:field="*{body}" placeholder="Body"
-                      class="form-control input-lg"></textarea>
+            <textarea th:field="*{body}" placeholder="Body" rows="10"
+                      class="form-control"></textarea>
         </div>
 
         <div class="form-group">
