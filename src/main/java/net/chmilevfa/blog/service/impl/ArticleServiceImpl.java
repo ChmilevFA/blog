@@ -5,6 +5,8 @@ import net.chmilevfa.blog.repository.ArticleRepository;
 import net.chmilevfa.blog.service.ArticleService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Implementation of {@link ArticleService} which uses {@link org.springframework.data.jpa.repository.JpaRepository}
  * for storing {@link Article} objects.
@@ -24,5 +26,10 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public Article save(Article article) {
         return articleRepository.saveAndFlush(article);
+    }
+
+    @Override
+    public List<Article> getAll() {
+        return articleRepository.findAllByOrderByCreateDateTimeDesc();
     }
 }

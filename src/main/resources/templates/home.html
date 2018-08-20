@@ -8,9 +8,10 @@
 
 <div th:replace="/fragments/header :: header"/>
 
-<div class="container">
-    <h1 th:text="${test} + '\'s Blog'">Username Blog</h1>
-    Example text
+<div class="container mt-5">
+
+    <div th:replace="/fragments/articles :: articles"/>
+
 </div>
 
 <div th:replace="/fragments/footer :: footer"/>
