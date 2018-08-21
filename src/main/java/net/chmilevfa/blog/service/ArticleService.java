@@ -2,7 +2,9 @@ package net.chmilevfa.blog.service;
 
 import net.chmilevfa.blog.model.Article;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Describes services for handling with {@link Article}.
@@ -17,4 +19,7 @@ public interface ArticleService {
 
     /** Returns all {@link Article} sorted by creation by desc. */
     List<Article> getAll();
+
+    /** Returns {@link Optional} for {@link Article} class by identifier. */
+    Optional<Article> getById(@NotNull Long id);
 }
