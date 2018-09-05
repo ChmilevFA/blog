@@ -28,6 +28,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+    compile('javax.xml.bind:jaxb-api:2.3.0')
     compile('org.thymeleaf.extras:thymeleaf-extras-springsecurity4:3.0.2.RELEASE')
     compile('org.webjars:bootstrap:4.1.0')
     compile('com.h2database:h2:1.4.197')

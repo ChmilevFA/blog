@@ -1,6 +1,9 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head>
     <div th:fragment="header-css">
+
+        <meta charset="UTF-8">
 
         <title>Technical Blog of Fedor Chmilev</title>
 
@@ -19,7 +22,12 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" th:href="@{/}">Technical Blog of Fedor Chmilev</a>
-            <a class="btn btn-dark" th:href="@{/newArticle}">New Article</a>
+            <div class="float-right">
+                <a class="btn btn-dark" th:href="@{/newArticle}" sec:authorize="isAuthenticated()">New Article</a>
+                <a class="btn btn-dark" th:href="@{/registration}" sec:authorize="!isAuthenticated()">Registration</a>
+                <a class="btn btn-dark" th:href="@{/login}" sec:authorize="!isAuthenticated()">Login</a>
+                <a class="btn btn-dark" th:href="@{/logout}" sec:authorize="isAuthenticated()">Log Out</a>
+            </div>
         </div>
     </nav>
 </div>

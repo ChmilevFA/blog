@@ -20,8 +20,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                .antMatchers("/", "/error", "/registration", "/h2-console/**").permitAll()
                 .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
-                .antMatchers("/", "/error", "/registration").permitAll()
                 .antMatchers().authenticated()
                 .anyRequest().authenticated()
                 .and()
@@ -31,6 +31,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .and()
                 .logout()
-                .permitAll();
+                .permitAll()
+        .and().csrf().disable(); //!!!
+        http.headers().frameOptions().disable(); //!!!
     }
 }
