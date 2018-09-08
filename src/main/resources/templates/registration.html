@@ -12,7 +12,7 @@
     <div class="alert alert-info" th:if="${successMessage}" th:utext="${successMessage}"></div>
 
     <div class="row">
-        <div class="col-sm-8 col-md-6">
+        <div class="col-sm-8 col-md-6 mx-auto">
             <form autocomplete="off" action="#" th:action="@{/registration}"
                   th:object="${user}" method="post" role="form">
 

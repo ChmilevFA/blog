@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import javax.validation.Valid;
 
 /**
- * TODO description
+ * Controller responsible for handling registration view.
  *
  * @author chmilevfa
  * @since 01.09.18

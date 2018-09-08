@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 /**
- * TODO description
+ * Implementation of {@link UserService} for storing {@link User} objects.
  *
  * @author chmilevfa
  * @since 05.09.18

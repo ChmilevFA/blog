@@ -5,7 +5,7 @@ import net.chmilevfa.blog.model.User;
 import java.util.Optional;
 
 /**
- * TODO description
+ * Describes service for handling with {@link User}.
  *
  * @author chmilevfa
  * @since 05.09.18

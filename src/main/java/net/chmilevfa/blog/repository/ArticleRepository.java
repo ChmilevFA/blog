@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 /**
- * Extends of standard {@link JpaRepository} for handling with {@link Article}.
+ * Extends standard {@link JpaRepository} for handling with {@link Article}.
  *
  * @author chmilevfa
  * @since 19.08.18

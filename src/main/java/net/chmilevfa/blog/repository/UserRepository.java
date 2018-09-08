@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.Optional;
 
 /**
- * TODO description
+ * Extends standard {@link JpaRepository} for handling with {@link User}.
  *
  * @author chmilevfa
  * @since 05.09.18

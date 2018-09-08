@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Describes services for handling with {@link Article}.
+ * Describes service for handling with {@link Article}.
  *
  * @author chmilevfa
  * @since 19.08.18

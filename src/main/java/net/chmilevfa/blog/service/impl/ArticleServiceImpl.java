@@ -10,8 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Implementation of {@link ArticleService} which uses {@link org.springframework.data.jpa.repository.JpaRepository}
- * for storing {@link Article} objects.
+ * Implementation of {@link ArticleService} for storing {@link Article} objects.
  *
  * @author chmilevfa
  * @since 19.08.18
